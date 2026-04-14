@@ -1,4 +1,15 @@
-# Go check readme for more info
+
+
+
+# If you got here by mistake press **[here](https://ecx678.gitub.io/elephantmod/editor/)**
+-
+-
+-
+-
+
+
+
+# STATUS
 
 ## Important news about homepage
 - We have canceled working on the **homepage** right now due to a lot of delays.
