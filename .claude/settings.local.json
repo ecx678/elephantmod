@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(python3:*)",
+      "Bash(/c/Users/46705/AppData/Local/Programs/Python/Python313/python.exe -c \"\nimport re\nwith open\\('C:/Users/46705/Documents/elephantmod/editor/js/editor.234d819ba29d68347ea5.js', 'r', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\nidx = content.find\\('menu'\\)\nprint\\(repr\\(content[idx:idx+300]\\)\\)\n\")",
+      "Bash(/c/Users/46705/AppData/Local/Programs/Python/Python313/python.exe -c \"\nimport re\nwith open\\('C:/Users/46705/Documents/elephantmod/editor/js/editor~embed~fullscreen~player~playground.47254f5a7975d17fbff6.js', 'r', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\n\nidx = content.find\\('.menu-bar_menu-bar_JcuHF'\\)\nprint\\(repr\\(content[idx:idx+400]\\)\\)\n\")",
+      "Bash(/c/Users/46705/AppData/Local/Programs/Python/Python313/python.exe -c \"\nimport re\nwith open\\('C:/Users/46705/Documents/elephantmod/editor/js/editor~embed~fullscreen~player~playground.47254f5a7975d17fbff6.js', 'r', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\n\nidx = content.find\\('.menu-bar_menu-bar_JcuHF'\\)\nprint\\(repr\\(content[idx:idx+800]\\)\\)\n\")",
+      "Bash(/c/Users/46705/AppData/Local/Programs/Python/Python313/python.exe -c \"\nimport re\nwith open\\('C:/Users/46705/Documents/elephantmod/editor/js/editor~embed~fullscreen~player~playground.47254f5a7975d17fbff6.js', 'r', encoding='utf-8'\\) as f:\n    content = f.read\\(\\)\n\nidx = content.find\\('.menu-bar_menu-bar_JcuHF'\\)\nprint\\(repr\\(content[idx:idx+1400]\\)\\)\n\")"
+    ]
+  }
+}
