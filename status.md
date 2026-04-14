@@ -1,7 +1,7 @@
 
 
 
-# If you got here by mistake press **[here](https://ecx678.gitub.io/elephantmod/editor/)**
+# If you got here by mistake press **[here](https://ecx678.github.io/elephantmod/editor/)**
 -
 -
 -
