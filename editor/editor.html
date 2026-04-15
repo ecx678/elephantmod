@@ -73,7 +73,46 @@
     <script src="./js/addon-settings~addons~editor~fullscreen~player~.js"></script>
     <script src="./js/editor~embed~fullscreen~player~playground.47254f5a7975d17fbff6.js"></script>
     <script src="./js/editor.234d819ba29d68347ea5.js"></script>
-    
+
+    <script>
+        (function () {
+            const warningMessage = 'This function is not available right now, go check status.md in GitHub for more information';
+
+            const isUploadButton = (el) => {
+                if (!el || el.tagName !== 'BUTTON') return false;
+                const text = (el.textContent || '').trim().toLowerCase();
+                const label = (el.getAttribute('aria-label') || '').trim().toLowerCase();
+                const title = (el.getAttribute('title') || '').trim().toLowerCase();
+                return text === 'upload' || label === 'upload' || title === 'upload';
+            };
+
+            const applyUploadButtonBehavior = () => {
+                const buttons = document.querySelectorAll('button');
+                buttons.forEach((button) => {
+                    if (!isUploadButton(button) || button.dataset.elephantUploadPatched === 'true') return;
+
+                    button.style.backgroundColor = '#ff0000';
+                    button.style.borderColor = '#ff0000';
+                    button.style.color = '#ffffff';
+                    button.dataset.elephantUploadPatched = 'true';
+
+                    button.addEventListener('click', (event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        event.stopImmediatePropagation();
+                        alert(warningMessage);
+                    }, true);
+                });
+            };
+
+            window.addEventListener('load', () => {
+                applyUploadButtonBehavior();
+                const observer = new MutationObserver(applyUploadButtonBehavior);
+                observer.observe(document.body, { childList: true, subtree: true });
+            });
+        })();
+    </script>
+
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" crossorigin="anonymous"></script>
 </body>
 </html>
