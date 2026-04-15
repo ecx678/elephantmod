@@ -17,6 +17,7 @@
 
 ## Important news about editor
 - We are currently working on the homepage
+- **Important**: You will not be able to upload anymore until we get done with our services.
 
 
 # More info cooming soon
